@@ -34,6 +34,7 @@ let counter=0
 while (counter<numberOfCycles) {
 let construct=""
 for (let i=1;i<=length;i++) {
+await page.waitFor(2000)
 construct+=randomElement(chars)
 }
 counter++;
